@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="User / Mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDa-He-aBm" customClass="CustomText" customModule="demo" customModuleProvider="target">
+                                <rect key="frame" x="154" y="28" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="W4M-4l-fyJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="gVy-Z4-P7s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image" value="user"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-nc-csM" customClass="CustomTextTwoImages" customModule="demo" customModuleProvider="target">
+                                <rect key="frame" x="154" y="86" width="293" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image1" value="user"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="image2" value="send"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bPi-nc-csM" firstAttribute="height" secondItem="JDa-He-aBm" secondAttribute="height" id="0MG-fc-MH0"/>
+                            <constraint firstItem="JDa-He-aBm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="CvW-hL-qoP"/>
+                            <constraint firstItem="bPi-nc-csM" firstAttribute="trailing" secondItem="JDa-He-aBm" secondAttribute="trailing" id="PgH-9g-kaj"/>
+                            <constraint firstItem="bPi-nc-csM" firstAttribute="top" secondItem="JDa-He-aBm" secondAttribute="bottom" constant="8" id="RF7-XH-6bU"/>
+                            <constraint firstItem="bPi-nc-csM" firstAttribute="width" secondItem="JDa-He-aBm" secondAttribute="width" id="eEL-61-cxk"/>
+                            <constraint firstItem="JDa-He-aBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdJ-xo-SyC"/>
+                            <constraint firstItem="bPi-nc-csM" firstAttribute="leading" secondItem="JDa-He-aBm" secondAttribute="leading" id="rVx-Vn-bOs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text1" destination="JDa-He-aBm" id="g32-iN-zgD"/>
+                        <outlet property="text2" destination="bPi-nc-csM" id="4FI-t1-X5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+</document>
